@@ -40,7 +40,7 @@ public class InteractionJoueur : MonoBehaviour
         animator.SetTrigger("idle");
         controles.etatPerso = EtatPerso.FINJEU;
         yield return new WaitForSeconds(5);
-        controles.RedemarrerlaPartie();
+        SceneManager.LoadScene(0);
     }
     public void DetecterInterrupteur()
     {
